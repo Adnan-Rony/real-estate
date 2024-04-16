@@ -3,7 +3,7 @@ import { FcAssistant } from "react-icons/fc";
 const About = () => {
   return (
     <div>
-      <div className="my-10">
+      <div className="my-10 py-5">
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 justify-center items-center">
        
           <div className="">

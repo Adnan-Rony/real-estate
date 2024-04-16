@@ -31,32 +31,32 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="space-y-5 my-5">
-        <p className="text-center font-bold lg:text-5xl text-2xl">
+      <div className="space-y-5 py-12 text-center">
+        <p className="font-bold lg:text-5xl text-2xl">
           Would you like to live in Garden Hills?
         </p>
 
-        <div className="space-y-4 flex-col justify-center items-center py-16">
+        <div className="space-y-7 py-10  ">
           <input
             type="text"
             placeholder="Type Your Name"
-            className="input input-bordered input-warning w-3/4 my-2  "
+            className="input input-bordered  input-warning w-3/4 mx-auto"
           />{" "}
           <br />
           <input
             type="email"
             placeholder="Type Your Email"
-            className="input input-bordered input-warning w-3/4 "
+            className="input input-bordered  input-warning w-3/4 mx-auto"
           />{" "}
           <br />
           <input
             type="text"
             placeholder="Type Your Phone"
-            className="input input-bordered input-warning w-3/4 "
+            className="input input-bordered  input-warning w-3/4 mx-auto"
           />
         </div>
 
-        <button className="btn w-1/2 bg-[#F54748] text-white flex mx-auto ">
+        <button className="btn bg-[#F54748] text-white w-1/2 mx-auto">
           Send
         </button>
       </div>

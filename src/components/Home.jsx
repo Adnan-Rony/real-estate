@@ -9,8 +9,9 @@ const Home = () => {
     return (
         <div className='my-5'>
             <Banner></Banner>
-            <About></About>
+            
             <Categories></Categories>
+            <About></About>
             
         </div>
     );

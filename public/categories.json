@@ -1,0 +1,285 @@
+[
+    {
+        "id": 1,
+        "estate_title": "Modern Loft with City Views",
+        "image": "modern_loft.jpg",
+        "segment_name": "Luxury",
+        "description": "Experience urban luxury in this modern loft boasting panoramic city views. With sleek design and high-end amenities, this apartment offers the epitome of metropolitan living.",
+        "price": "$750,000",
+        "status": "sale",
+        "area": "1800 sq ft",
+        "location": "Downtown",
+        "facilities": ["living room", "rooftop terrace", "gym", "concierge"],
+        "categories": "apartments"
+      },
+      {
+        "id": 2,
+        "estate_title": "Charming Studio in Historic District",
+        "image": "historic_studio.jpg",
+        "segment_name": "Mid-range",
+        "description": "Step back in time with this charming studio located in the historic district. Ideal for singles or couples, this cozy apartment offers character and convenience in a vibrant neighborhood.",
+        "price": "$1500/month",
+        "status": "rent",
+        "area": "600 sq ft",
+        "location": "Historic District",
+        "facilities": ["living room", "laundry", "bike storage"],
+        "categories": "apartments"
+      },
+      {
+        "id": 3,
+        "estate_title": "Family-Friendly Apartment with Park Access",
+        "image": "family_apartment.jpg",
+        "segment_name": "Family",
+        "description": "Create lasting memories in this spacious family-friendly apartment. With access to the nearby park and playground, it's the perfect home for families seeking both comfort and recreation.",
+        "price": "$550,000",
+        "status": "sale",
+        "area": "2200 sq ft",
+        "location": "Suburbs",
+        "facilities": ["living room", "park access", "playground", "pet-friendly"],
+        "categories": "apartments"
+      },
+      {
+        "id": 4,
+        "estate_title": "Sleek Urban Apartment with Riverfront Views",
+        "image": "urban_apartment.jpg",
+        "segment_name": "Luxury",
+        "description": "Indulge in luxury living with this sleek urban apartment offering breathtaking riverfront views. With top-of-the-line amenities and a prime location, it's a haven for discerning urbanites.",
+        "price": "$1,200,000",
+        "status": "sale",
+        "area": "2800 sq ft",
+        "location": "Waterfront",
+        "facilities": ["living room", "riverfront balcony", "fitness center", "24/7 security"],
+        "categories": "apartments"
+      },
+
+
+      
+
+        {
+          "id": 5,
+          "estate_title": "Luxurious Townhouse with Private Garden",
+          "image": "luxury_townhouse.jpg",
+          "segment_name": "Luxury",
+          "description": "Indulge in the epitome of luxury with this stunning townhouse featuring a private garden oasis. With exquisite design and top-of-the-line finishes, this residence offers an unparalleled living experience.",
+          "price": "$1,500,000",
+          "status": "sale",
+          "area": "3000 sq ft",
+          "location": "Suburbs",
+          "facilities": ["living room", "private garden", "gourmet kitchen", "home theater"],
+          "categories": "townhouses"
+        },
+        {
+          "id": 6,
+          "estate_title": "Modern Townhouse in Trendy Neighborhood",
+          "image": "modern_townhouse.jpg",
+          "segment_name": "Mid-range",
+          "description": "Live in style with this modern townhouse nestled in a trendy neighborhood. With sleek design and contemporary amenities, it's the perfect blend of urban living and comfort.",
+          "price": "$800,000",
+          "status": "sale",
+          "area": "2200 sq ft",
+          "location": "Urban",
+          "facilities": ["living room", "rooftop terrace", "gym", "garage"],
+          "categories": "townhouses"
+        },
+        {
+          "id": 7,
+          "estate_title": "Family-Friendly Townhouse with Community Pool",
+          "image": "family_townhouse.jpg",
+          "segment_name": "Family",
+          "description": "Make memories in this family-friendly townhouse with access to a community pool. With spacious interiors and a welcoming atmosphere, it's an ideal home for growing families.",
+          "price": "$650,000",
+          "status": "sale",
+          "area": "2500 sq ft",
+          "location": "Suburbs",
+          "facilities": ["living room", "community pool", "playground", "pet-friendly"],
+          "categories": "townhouses"
+        },
+        {
+          "id": 8,
+          "estate_title": "Charming Townhouse with Historic Charm",
+          "image": "historic_townhouse.jpg",
+          "segment_name": "Mid-range",
+          "description": "Step into history with this charming townhouse featuring historic charm and modern comforts. Located in a quaint neighborhood, it offers a unique living experience.",
+          "price": "$700,000",
+          "status": "sale",
+          "area": "1800 sq ft",
+          "location": "Historic District",
+          "facilities": ["living room", "fireplace", "garden", "study"],
+          "categories": "townhouses"
+        },
+
+
+
+        {
+            "id": 9,
+            "estate_title": "Seaside Villa with Private Beach Access",
+            "image": "seaside_villa.jpg",
+            "segment_name": "Luxury",
+            "description": "Escape to paradise in this luxurious seaside villa offering direct access to a private beach. With stunning ocean views and lavish amenities, it's the ultimate retreat for relaxation and rejuvenation.",
+            "price": "$2,500/night",
+            "status": "rent",
+            "area": "4000 sq ft",
+            "location": "Coastal",
+            "facilities": ["oceanfront terrace", "infinity pool", "gourmet kitchen", "private chef"],
+            "categories": "vacation rentals"
+          },
+          {
+            "id": 10,
+            "estate_title": "Mountain Chalet with Panoramic Views",
+            "image": "mountain_chalet.jpg",
+            "segment_name": "Mid-range",
+            "description": "Experience the beauty of the mountains in this cozy chalet boasting panoramic views. With rustic charm and modern comforts, it's the perfect getaway for nature lovers.",
+            "price": "$300/night",
+            "status": "rent",
+            "area": "1500 sq ft",
+            "location": "Mountains",
+            "facilities": ["fireplace", "hot tub", "hiking trails access", "bbq grill"],
+            "categories": "vacation rentals"
+          },
+          {
+            "id": 11,
+            "estate_title": "Tropical Bungalow with Poolside Paradise",
+            "image": "tropical_bungalow.jpg",
+            "segment_name": "Family",
+            "description": "Escape to a tropical paradise in this charming bungalow with a private poolside oasis. With lush surroundings and family-friendly amenities, it's the perfect retreat for unforgettable vacations.",
+            "price": "$500/night",
+            "status": "rent",
+            "area": "1800 sq ft",
+            "location": "Islands",
+            "facilities": ["private pool", "tropical garden", "outdoor dining area", "wifi"],
+            "categories": "vacation rentals"
+          },
+          {
+            "id": 12,
+            "estate_title": "Ski-In/Ski-Out Chalet in Winter Wonderland",
+            "image": "ski_chalet.jpg",
+            "segment_name": "Luxury",
+            "description": "Experience the ultimate ski vacation in this luxurious chalet with ski-in/ski-out access. With lavish interiors and stunning mountain views, it's a haven for winter sports enthusiasts.",
+            "price": "$1,000/night",
+            "status": "rent",
+            "area": "2500 sq ft",
+            "location": "Ski Resort",
+            "facilities": ["ski-in/ski-out access", "hot tub", "home theater", "sauna"],
+            "categories": "vacation rentals"
+          },
+
+
+
+          {
+            "id": 13,
+            "estate_title": "Classic Single-Family Home in Suburban Oasis",
+            "image": "classic_home.jpg",
+            "segment_name": "Mid-range",
+            "description": "Enjoy suburban living at its finest in this classic single-family home. With spacious interiors and a peaceful neighborhood setting, it's the perfect retreat from the hustle and bustle of city life.",
+            "price": "$600,000",
+            "status": "sale",
+            "area": "2400 sq ft",
+            "location": "Suburbs",
+            "facilities": ["spacious backyard", "gourmet kitchen", "home office", "garage"],
+            "categories": "Single-family"
+          },
+          {
+            "id": 14,
+            "estate_title": "Contemporary Single-Family Home with Mountain Views",
+            "image": "contemporary_home.jpg",
+            "segment_name": "Luxury",
+            "description": "Embrace modern living in this contemporary single-family home boasting stunning mountain views. With sleek design and upscale finishes, it offers the perfect blend of style and comfort.",
+            "price": "$1,200,000",
+            "status": "sale",
+            "area": "3500 sq ft",
+            "location": "Mountainside",
+            "facilities": ["floor-to-ceiling windows", "private deck", "home theater", "wine cellar"],
+            "categories": "Single-family"
+          },
+          {
+            "id": 15,
+            "estate_title": "Cozy Single-Family Cottage in Quaint Village",
+            "image": "cozy_cottage.jpg",
+            "segment_name": "Family",
+            "description": "Experience the charm of village life in this cozy single-family cottage. With a picturesque setting and family-friendly amenities, it's the perfect place to call home.",
+            "price": "$400,000",
+            "status": "sale",
+            "area": "1800 sq ft",
+            "location": "Village",
+            "facilities": ["front porch", "fireplace", "garden", "playroom"],
+            "categories": "Single-family"
+          },
+          {
+            "id": 16,
+            "estate_title": "Elegant Single-Family Home with Waterfront Views",
+            "image": "waterfront_home.jpg",
+            "segment_name": "Luxury",
+            "description": "Live in luxury with this elegant single-family home featuring breathtaking waterfront views. With impeccable design and premium amenities, it offers an unparalleled living experience.",
+            "price": "$1,800,000",
+            "status": "sale",
+            "area": "4000 sq ft",
+            "location": "Waterfront",
+            "facilities": ["private dock", "infinity pool", "home gym", "guest suite"],
+            "categories": "Single-family"
+          },
+
+
+
+          {
+            "id": 17,
+            "estate_title": "Modern Student Apartment near Campus",
+            "image": "modern_apartment.jpg",
+            "segment_name": "Budget",
+            "description": "Live in style and convenience with this modern student apartment located just steps away from campus. With contemporary design and affordable pricing, it's the perfect choice for students.",
+            "price": "$800/month",
+            "status": "rent",
+            "area": "500 sq ft",
+            "location": "Campus",
+            "facilities": ["fully furnished", "study lounge", "fitness center", "laundry facilities"],
+            "categories": "student housing"
+          },
+          {
+            "id": 18,
+            "estate_title": "Shared Student House with Communal Spaces",
+            "image": "shared_house.jpg",
+            "segment_name": "Budget",
+            "description": "Experience the camaraderie of shared living in this student house with communal spaces. With affordable rent and a vibrant atmosphere, it's the ideal option for students seeking social connections.",
+            "price": "$600/month (per room)",
+            "status": "rent",
+            "area": "2000 sq ft",
+            "location": "Student District",
+            "facilities": ["shared kitchen", "common area", "backyard", "utilities included"],
+            "categories": "student housing"
+          },
+          {
+            "id": 19,
+            "estate_title": "Cozy Student Studio with Study Nook",
+            "image": "cozy_studio.jpg",
+            "segment_name": "Budget",
+            "description": "Maximize productivity in this cozy student studio featuring a dedicated study nook. With affordable rent and a quiet atmosphere, it's the perfect space for focused studying.",
+            "price": "$700/month",
+            "status": "rent",
+            "area": "400 sq ft",
+            "location": "Student Quarter",
+            "facilities": ["study nook", "kitchenette", "wifi", "utilities included"],
+            "categories": "student housing"
+          },
+          {
+            "id": 20,
+            "estate_title": "Student Dormitory with On-Campus Amenities",
+            "image": "student_dorm.jpg",
+            "segment_name": "Budget",
+            "description": "Experience campus life to the fullest in this student dormitory with convenient on-campus amenities. With affordable rates and proximity to classes, it's the ultimate student living experience.",
+            "price": "$500/month",
+            "status": "rent",
+            "area": "150 sq ft (per bed)",
+            "location": "University Campus",
+            "facilities": ["shared bathrooms", "lounge area", "laundry room", "24/7 security"],
+            "categories": "student housing"
+          }
+
+
+
+
+
+      
+      
+
+
+      
+]
