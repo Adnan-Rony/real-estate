@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../authintication/AuthProvider";
-
+import { NavLink } from "react-router-dom";
 const Navber = () => {
   const { user, logout, googleLogin } = useContext(AuthContext);
 
@@ -39,7 +39,14 @@ const Navber = () => {
                 <a>Parent</a>
                 <ul className="p-2">
                   <li>
-                    <a>Submenu 1</a>
+                    <NavLink
+                      to="/contact"
+                      className={({ isActive, isPending }) =>
+                        isPending ? "pending" : isActive ? "active" : ""
+                      }
+                    >
+                      Contact
+                    </NavLink>
                   </li>
                   <li>
                     <a>Submenu 2</a>
@@ -51,51 +58,64 @@ const Navber = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <Link to={"/"} className="btn btn-ghost text-xl">daisyUI</Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a>Item 1</a>
+              <NavLink
+                to="/about"
+                className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "border-b-2 border-[#F54748]" : ""
+                }
+              >
+                About
+              </NavLink>
             </li>
             <li>
-              <details>
-                <summary>Parent</summary>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </details>
+              <NavLink
+                to="/contact"
+                className={({ isActive, isPending }) =>
+                  isPending ? "pending" : isActive ? "border-b-2 border-[#F54748]" : ""
+                }
+              >
+                Contact
+              </NavLink>
             </li>
             <li>
-              <a>Item 3</a>
+              <NavLink
+                to="/"
+                className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "border-b-2 border-[#F54748]" : ""
+                }
+              >
+                Nothing
+              </NavLink>
             </li>
           </ul>
         </div>
         <div className="navbar-end">
-        {user && (
-                <img className="w-14 rounded-full" src={user.photoURL} alt="" />
-              )}
+          {user && (
+            <img className="w-14 rounded-full" src={user.photoURL} alt="" />
+          )}
         </div>
         <div>
-        <div>
-              {user ? (
-                <button
-                  onClick={handleesignOut}
-                  className="btn btn-sm btn-outline bg-[#F54748]"
-                >
-                  Sign Out
+          <div>
+            {user ? (
+              <button
+                onClick={handleesignOut}
+                className="btn btn-sm btn-outline bg-[#F54748]"
+              >
+                Sign Out
+              </button>
+            ) : (
+              <Link to="/login">
+                <button className="btn btn-sm btn-outline text-white bg-[#FDC55E]">
+                  Login
                 </button>
-              ) : (
-                <Link to="/login">
-                  <button className="btn btn-sm btn-outline text-white bg-[#FDC55E]">Login</button>
-                </Link>
-              )}
-            </div>
+              </Link>
+            )}
+          </div>
         </div>
       </div>
     </div>

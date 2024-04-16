@@ -10,8 +10,9 @@ const Mainlayout = () => {
         <Navber></Navber>
         <Outlet></Outlet>
         <Toaster></Toaster>
-        <Footer></Footer>
+        
       </div>
+      <Footer></Footer>
     </div>
   );
 };
