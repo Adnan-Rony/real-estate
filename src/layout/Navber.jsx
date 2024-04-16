@@ -1,6 +1,14 @@
-import { NavLink } from "react-router-dom";
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
+import { AuthContext } from "../authintication/AuthProvider";
 
 const Navber = () => {
+  const { user, logout, googleLogin } = useContext(AuthContext);
+
+  const handleesignOut = () => {
+    logout();
+  };
+
   return (
     <div>
       <div className="navbar ">
@@ -26,15 +34,7 @@ const Navber = () => {
               tabIndex={0}
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
-              <NavLink
-                to="/messages"
-                className={({ isActive, isPending }) =>
-                  isPending ? "pending" : isActive ? "active" : ""
-                }
-              >
-                Messages
-              </NavLink>
-              ;
+              <Link to={"/login"}></Link>
               <li>
                 <a>Parent</a>
                 <ul className="p-2">
@@ -77,7 +77,25 @@ const Navber = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Button</a>
+        {user && (
+                <img className="w-14 rounded-full" src={user.photoURL} alt="" />
+              )}
+        </div>
+        <div>
+        <div>
+              {user ? (
+                <button
+                  onClick={handleesignOut}
+                  className="btn btn-sm btn-outline bg-[#F54748]"
+                >
+                  Sign Out
+                </button>
+              ) : (
+                <Link to="/login">
+                  <button className="btn btn-sm btn-outline text-white bg-[#FDC55E]">Login</button>
+                </Link>
+              )}
+            </div>
         </div>
       </div>
     </div>
