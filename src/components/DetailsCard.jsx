@@ -19,7 +19,7 @@ const DetailsCard = ({ show }) => {
   } = show || {};
 
   return (
-    <div className="h-screen">
+    <div className="">
 
 
 

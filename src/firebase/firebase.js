@@ -6,12 +6,12 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBLhjC2YkTwlaH4nknbjEWxwX8rISrkS1o",
-  authDomain: "real-estate-d3686.firebaseapp.com",
-  projectId: "real-estate-d3686",
-  storageBucket: "real-estate-d3686.appspot.com",
-  messagingSenderId: "152022874383",
-  appId: "1:152022874383:web:c2209cec632fddf3c6667a"
+  apiKey: "AIzaSyAmNEgen3uEtActn_n7eKcMKVfSCp45Ce4",
+  authDomain: "car-doctor-38e6a.firebaseapp.com",
+  projectId: "car-doctor-38e6a",
+  storageBucket: "car-doctor-38e6a.appspot.com",
+  messagingSenderId: "389168487082",
+  appId: "1:389168487082:web:a4e7f22c079b3cfa1c4ed3"
 };
 
 // Initialize Firebase

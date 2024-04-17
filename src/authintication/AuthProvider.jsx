@@ -5,7 +5,7 @@ import {
   signInWithPopup,
   signOut,
 } from "firebase/auth";
-import { GoogleAuthProvider } from "firebase/auth/cordova";
+import { GoogleAuthProvider } from "firebase/auth";
 import React, { createContext, useEffect, useState } from "react";
 import auth from "../firebase/firebase";
 

@@ -12,6 +12,7 @@ import Register from './layout/Register';
 import Contact from "./components/Contact";
 import CategoriesDetails from './components/CategoriesDetails';
 import PrivateRoute from './layout/PrivateRoute';
+import About from "./components/About";
 
 const router = createBrowserRouter([
   {
@@ -32,13 +33,17 @@ const router = createBrowserRouter([
         element: <Register />,
       },
       {
+        path: "/about",
+        element: <About />,
+      },
+      {
         path: "/contact",
         element: <Contact />,
       },
       {
         path: "/details/:id",
         element: <PrivateRoute><CategoriesDetails/></PrivateRoute>,
-        loader:()=>fetch('/src/categories.json')
+        loader:()=>fetch('/categories.json')
       },
     ],
   },

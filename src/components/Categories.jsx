@@ -6,7 +6,7 @@ const Categories = () => {
   const [post, setPost] = useState([]);
 
   useEffect(() => {
-    fetch("/src/categories.json")
+    fetch("/categories.json")
       .then((res) => res.json())
       .then((data) => setPost(data));
   }, []);
