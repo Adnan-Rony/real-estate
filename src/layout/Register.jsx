@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import  { useContext } from "react";
 import { AuthContext } from "../authintication/AuthProvider";
 import { Link } from "react-router-dom";
 import toast from "react-hot-toast";
@@ -11,6 +11,7 @@ const Register = () => {
     const name = event.target.name.value;
     const email = event.target.email.value;
     const password = event.target.password.value;
+    const photo = event.target.photo.value;
 
     console.log(name, email, password);
 
@@ -36,17 +37,16 @@ const Register = () => {
       return;
     }
 
-    CreateUser(email, password)
+    CreateUser(email, password,name,photo)
       .then((result) => {
         console.log(result);
-        // setsucess('user created successfully')
+      
 
         toast.success("user created successfully");
       })
       .catch((error) => {
         console.error(error);
-        // setregistererror(error.message)
-        // toast.error(error.message);
+      
       });
   };
 
@@ -55,11 +55,12 @@ const Register = () => {
       <div className="hero-content ">
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl text-black   bg-white">
           <div className="card-body">
+            
             {/* <form onSubmit={handlelogin} > */}
 
             <form onSubmit={handleregister}>
               <div className="form-control">
-                <h1 className="text-3xl font-bold mb-5 ">
+                <h1 className="lg:text-3xl text-xl font-bold mb-5 ">
                   Register your account
                 </h1>
                 <label className="label">
@@ -86,6 +87,18 @@ const Register = () => {
                   required
                 />
               </div>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text ">Photo URL</span>
+                </label>
+                <input
+                  type="text"
+                  name="photo"
+                  placeholder="Enter Your Photo URL"
+                  className="input input-bordered"
+                  required
+                />
+              </div>
 
               <div className="form-control">
                 <label className="label">
@@ -104,7 +117,7 @@ const Register = () => {
                 <button className="btn btn-primary">Register</button>
               </div>
             </form>
-            <p className="">
+            <p className="lg:text-xl text-sm">
               already have account? please
               <Link to="/login">
                 <button className="btn  btn-link text-[#F54748]">Login</button>

@@ -9,7 +9,6 @@ import { GoogleAuthProvider } from "firebase/auth/cordova";
 import React, { createContext, useEffect, useState } from "react";
 import auth from "../firebase/firebase";
 
-
 export const AuthContext = createContext(null);
 const AuthProvider = ({ children }) => {
   const [user, setuser] = useState(null);
@@ -48,7 +47,7 @@ const AuthProvider = ({ children }) => {
     user,
     signIn,
     logout,
-    googleprovider,
+
     googleLogin,
     CreateUser,
   };

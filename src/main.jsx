@@ -10,6 +10,8 @@ import Login from "./layout/Login";
 import AuthProvider from "./authintication/AuthProvider";
 import Register from './layout/Register';
 import Contact from "./components/Contact";
+import CategoriesDetails from './components/CategoriesDetails';
+import PrivateRoute from './layout/PrivateRoute';
 
 const router = createBrowserRouter([
   {
@@ -32,6 +34,11 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/details/:id",
+        element: <CategoriesDetails/>,
+        loader:()=>fetch('/src/categories.json')
       },
     ],
   },

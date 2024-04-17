@@ -20,8 +20,8 @@ const Card = ({ item }) => {
       <div className="card card-normal  bg-base-100 shadow-xl">
         <figure>
           <img
-            className="rounded-t-lg h-[250px] w-full"
-            src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+            className="rounded-t-lg lg:h-[250px] w-full"
+            src={image}
             alt="Shoes"
           />
         </figure>

@@ -11,7 +11,7 @@ const Navber = () => {
 
   return (
     <div>
-      <div className="navbar ">
+      <div className="navbar   ">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -39,6 +39,18 @@ const Navber = () => {
                 <a>Parent</a>
                 <ul className="p-2">
                   <li>
+                   
+                    <NavLink
+                      to="/"
+                      className={({ isActive, isPending }) =>
+                        isPending ? "pending" : isActive ? "active" : ""
+                      }
+                    >
+                      Contact
+                    </NavLink>
+                  </li>
+                  <li>
+                   
                     <NavLink
                       to="/contact"
                       className={({ isActive, isPending }) =>
@@ -49,8 +61,17 @@ const Navber = () => {
                     </NavLink>
                   </li>
                   <li>
-                    <a>Submenu 2</a>
+                   
+                    <NavLink
+                      to="/about"
+                      className={({ isActive, isPending }) =>
+                        isPending ? "pending" : isActive ? "active" : ""
+                      }
+                    >
+                      About
+                    </NavLink>
                   </li>
+                  
                 </ul>
               </li>
               <li>
@@ -58,40 +79,44 @@ const Navber = () => {
               </li>
             </ul>
           </div>
-          <Link to={"/"} className="btn btn-ghost text-xl">daisyUI</Link>
+          <Link to={"/"} className="btn btn-ghost text-xl">Real-Estate</Link>
         </div>
-        <div className="navbar-center hidden lg:flex">
+        <div className="navbar-center hidden lg:flex ">
           <ul className="menu menu-horizontal px-1">
+          <li>
+              
+              <NavLink
+                to="/"
+                className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "border-b-4 border-l-2 border-r-2  border-[#F54748]" : ""
+                }
+              >
+                Home
+              </NavLink>
+            </li>
             <li>
+              
               <NavLink
                 to="/about"
                 className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "border-b-2 border-[#F54748]" : ""
+                isPending ? "pending" : isActive ? "border-b-4 border-l-2 border-r-2  border-[#F54748]" : ""
                 }
               >
                 About
               </NavLink>
             </li>
+          
             <li>
               <NavLink
                 to="/contact"
                 className={({ isActive, isPending }) =>
-                  isPending ? "pending" : isActive ? "border-b-2 border-[#F54748]" : ""
+                  isPending ? "pending" : isActive ? "border-b-4 border-l-2 border-r-2  border-[#F54748]" : ""
                 }
               >
                 Contact
               </NavLink>
             </li>
-            <li>
-              <NavLink
-                to="/"
-                className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "border-b-2 border-[#F54748]" : ""
-                }
-              >
-                Nothing
-              </NavLink>
-            </li>
+           
           </ul>
         </div>
         <div className="navbar-end">
@@ -118,6 +143,7 @@ const Navber = () => {
           </div>
         </div>
       </div>
+       
     </div>
   );
 };

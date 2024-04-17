@@ -25,7 +25,7 @@ const Categories = () => {
 
   return (
     <div>
-      <p className="text-3xl text-center lg:text-4xl font-semibold my-8">
+      <p className="text-2xl text-center lg:text-4xl font-semibold lg:my-8 mt-6">
         Select Categories
       </p>
       <Tabs className="py-5 ">

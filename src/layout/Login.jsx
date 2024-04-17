@@ -47,7 +47,7 @@ const Login = () => {
               {/* <form onSubmit={handlelogin} > */}
               <form onSubmit={handlelogin}>
                 <div className="form-control">
-                  <h1 className="text-3xl font-bold mb-5">
+                  <h1 className="lg:text-3xl text-xl font-bold mb-5">
                     Login your account
                   </h1>
                   <label className="label">
