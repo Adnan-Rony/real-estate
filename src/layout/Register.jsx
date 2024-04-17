@@ -117,7 +117,7 @@ const Register = () => {
                 <button className="btn btn-primary">Register</button>
               </div>
             </form>
-            <p className="lg:text-xl text-sm">
+            <p className=" ">
               already have account? please
               <Link to="/login">
                 <button className="btn  btn-link text-[#F54748]">Login</button>

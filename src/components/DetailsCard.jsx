@@ -7,6 +7,8 @@ const DetailsCard = ({ show }) => {
     id,
     estate_title,
     image,
+    image1,
+    image2,
     segment_name,
     description,
     price,
@@ -17,13 +19,50 @@ const DetailsCard = ({ show }) => {
   } = show || {};
 
   return (
-    <div>
-      <img className="w-full" src={image} alt="" />
+    <div className="h-screen">
+
+
+
+
+<div className="carousel w-full">
+  <div id="slide1" className="carousel-item relative w-full">
+    <img src={image} className="w-full" />
+    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide4" className="btn btn-circle">❮</a> 
+      <a href="#slide2" className="btn btn-circle">❯</a>
+    </div>
+  </div> 
+  <div id="slide2" className="carousel-item relative w-full">
+    <img src={image1} className="w-full" />
+    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide1" className="btn btn-circle">❮</a> 
+      <a href="#slide3" className="btn btn-circle">❯</a>
+    </div>
+  </div> 
+  <div id="slide3" className="carousel-item relative w-full">
+    <img src={image2} className="w-full" />
+    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide2" className="btn btn-circle">❮</a> 
+      <a href="#slide1" className="btn btn-circle">❯</a>
+    </div>
+  </div> 
+ 
+</div>
+
+
+
+
+
+
+
       <div className="mt-10 flex justify-between">
         <div className="flex gap-8 justify-center items-center">
           <p className="text-2xl font-bold">{price}</p>
           <button className="btn text-white bg-[#F54748] ">
             {status} <MdOutlineSaveAlt />
+          </button>
+          <button className="btn text-white bg-[#FDC55E] ">
+            {segment_name} <MdOutlineSaveAlt />
           </button>
         </div>
 

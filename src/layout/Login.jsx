@@ -1,11 +1,15 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../authintication/AuthProvider";
 import toast from "react-hot-toast";
-
+import auth from "../firebase/firebase";
+import { FaRegEye } from "react-icons/fa";
+import { FaRegEyeSlash } from "react-icons/fa";
 const Login = () => {
   const { signIn, user, googleLogin } = useContext(AuthContext);
   const navigate = useNavigate();
+
+  const [showpassword,setshowpassword]=useState(false)
 
   const handlelogin = (event) => {
     event.preventDefault();
@@ -29,7 +33,7 @@ const Login = () => {
   };
 
   const handlegoogle = () => {
-    googleLogin()
+    googleLogin(auth)
       .then((res) => {
         console.log(res);
         toast.success("Login successfully with Google");
@@ -61,23 +65,37 @@ const Login = () => {
                     className="input input-bordered"
                   />
                 </div>
-                <div className="form-control">
+
+
+                <div className="form-control relative ">
                   <label className="label">
                     <span className="label-text">Password</span>
                   </label>
+                  <div className="relative ">
                   <input
-                    type="password"
+                    type={showpassword ? "text" : "password"}
                     required
                     name="password"
                     placeholder=" Enter Your password"
-                    className="input input-bordered"
+                    className="input input-bordered w-full"
+                    
                   />
+                  <span className="absolute top-1/4 right-2" onClick={()=>setshowpassword(!showpassword)}>
+                    {
+                      showpassword ? <FaRegEyeSlash className="text-2xl" /> : <FaRegEye className="text-2xl" />
+                    }
+                 
+                  </span>
+                  </div>
                   <label className="label">
                     <Link href="#" className="label-text-alt link link-hover">
                       Forgot password?
                     </Link>
                   </label>
                 </div>
+
+
+
                 <div className="form-control mt-6">
                   <button className="btn btn-primary">Login</button>
                 </div>

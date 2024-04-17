@@ -79,7 +79,9 @@ const Navber = () => {
               </li>
             </ul>
           </div>
-          <Link to={"/"} className="btn btn-ghost text-xl">Real-Estate</Link>
+          <Link to={"/"} className="">
+            <img className="w-20 rounded-full" src="https://i.ibb.co/5GDKNwj/3-removebg-preview.png" alt="" />
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex ">
           <ul className="menu menu-horizontal px-1">
@@ -129,9 +131,9 @@ const Navber = () => {
             {user ? (
               <button
                 onClick={handleesignOut}
-                className="btn btn-sm btn-outline bg-[#F54748]"
+                className="btn btn-sm btn-outline text-white w-16 bg-[#F54748]"
               >
-                Sign Out
+                SignOut
               </button>
             ) : (
               <Link to="/login">
